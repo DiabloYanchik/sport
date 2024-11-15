@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical School</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="topic.css">
+    <link rel="stylesheet" href="sidemenu.css">
+    <link rel="stylesheet" href="topic2.css">
+</head>
+
+<body>
+    <div id="app">
+        <sidebar></sidebar>
+        <contents></contents>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+    <script>
+        Vue.component('sidebar', {
+            template: `
+                <div class="sidebar">
+                    <div class="panel">
+                        <div class="site-title">Medical School</div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-title">Профиль</div>
+                        <div class="profile-info">
+                            <div class="profile-avatar">
+                                <img src="https://shkola17nizhnevartovsk-r86.gosweb.gosuslugi.ru/netcat_files/39/2335/1663893100_11_damion_club_p_pustoi_belii_fon_instagram_12_1.jpg"
+                                    alt="" class="rounded-circle">
+                            </div>
+                            <p class="profile-name">Фамилия Имя Отчество</p>
+                        </div>
+                        <button type="button">Редактировать</button>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-title">Информация</div>
+                        <div class="info-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">О школе</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Правила</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Форум</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Олимпиады</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-title">Задачник</div>
+                        <div class="info-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Архив задач</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Состояние системы</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Рейтинг</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Курсы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-title">Методика</div>
+                        <div class="info-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Новичкам</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Статьи</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Ссылки</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Работа в системе</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `
+        });
+        Vue.component('contents', {
+            template: ` 
+            <div class="content">
+                <h1>Тема, большое длинное название темы</h1>
+                <button id="return">Вернуться</button>
+                <br>
+                <div class="comments-container">
+    <div class="comment">
+        <img src="https://shkola17nizhnevartovsk-r86.gosweb.gosuslugi.ru/netcat_files/39/2335/1663893100_11_damion_club_p_pustoi_belii_fon_instagram_12_1.jpg" alt="avatar">
+        <div class="comment-content">
+            <div class="comment-header">
+                <div class="author">Фамилия И. О.</div>
+                <div class="date">18 января 13:15</div>
+            </div>
+            <p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                            а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                            При создании генератора мы использовали небезизвестный универсальный код речей.
+                            Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце,
+                            что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                            <br>
+                            <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+                            который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
+                            В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
+                            и придаст неповторимый колорит советских времен.</p>
+                            <br>
+                            <p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                            а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                            При создании генератора мы использовали небезизвестный универсальный код речей.
+                            Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце,
+                            что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                            <br>
+                            <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+                            который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
+                            В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
+                            и придаст неповторимый колорит советских времен.</p>
+            <div class="comment">
+                <img src="https://shkola17nizhnevartovsk-r86.gosweb.gosuslugi.ru/netcat_files/39/2335/1663893100_11_damion_club_p_pustoi_belii_fon_instagram_12_1.jpg" alt="avatar">
+                <div class="comment-content">
+                <div class="comment-header">
+                    <div class="author">Фамилия И. О.</div>
+                    <div class="date">19 января 16:15</div>
+                </div>
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                            а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                            При создании генератора мы использовали небезизвестный универсальный код речей.
+                            Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце,
+                            что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                            <br>
+                            <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+                            который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
+                            В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
+                            и придаст неповторимый колорит советских времен.</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="https://shkola17nizhnevartovsk-r86.gosweb.gosuslugi.ru/netcat_files/39/2335/1663893100_11_damion_club_p_pustoi_belii_fon_instagram_12_1.jpg" alt="avatar">
+                <div class="comment-content">
+                <div class="comment-header">
+                    <div class="author">Фамилия И. О.</div>
+                    <div class="date">19 января 16:15</div>
+                </div>
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                            а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                            При создании генератора мы использовали небезизвестный универсальный код речей.
+                            Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце,
+                            что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                            <br>
+                            <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+                            который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
+                            В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
+                            и придаст неповторимый колорит советских времен.</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="https://shkola17nizhnevartovsk-r86.gosweb.gosuslugi.ru/netcat_files/39/2335/1663893100_11_damion_club_p_pustoi_belii_fon_instagram_12_1.jpg" alt="avatar">
+                <div class="comment-content">
+                <div class="comment-header">
+                    <div class="author">Фамилия И. О.</div>
+                    <div class="date">19 января 16:15</div>
+                </div>
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику,
+                            вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке,
+                            а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+                            При создании генератора мы использовали небезизвестный универсальный код речей.
+                            Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце,
+                            что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                            <br>
+                            <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+                            который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
+                            В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
+                            и придаст неповторимый колорит советских времен.</p>
+                </div>
+            </div>
+            <!--Добавить другие комментарии-->
+        </div>
+    </div>
+</div>
+<div class="editor-container">
+                <div class="editor-toolbar">
+                    <button type="button" class="btn btn-light" onclick="execCmd('bold')"><i class="fas fa-bold"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('italic')"><i class="fas fa-italic"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('underline')"><i class="fas fa-underline"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('strikeThrough')"><i class="fas fa-strikethrough"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('justifyLeft')"><i class="fas fa-align-left"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('justifyCenter')"><i class="fas fa-align-center"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('justifyRight')"><i class="fas fa-align-right"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('insertUnorderedList')"><i class="fas fa-list-ul"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('insertOrderedList')"><i class="fas fa-list-ol"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('createLink')"><i class="fas fa-link"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('unlink')"><i class="fas fa-unlink"></i></button>
+                    <button type="button" class="btn btn-light" onclick="execCmd('insertImage')"><i class="fas fa-image"></i></button>
+                </div>
+                <div id="editor" contenteditable="true" class="form-control" style="min-height: 200px;"></div>
+                <div class="button-container">
+                    <button type="button" id="addButton" class="btn mt-2">Добавить ответ</button>
+                </div>
+            </div>
+            </div>
+            `
+        });
+
+        new Vue({
+            el: '#app'
+        });
+
+        function execCmd(command) {
+                if (command === 'createLink') {
+                    let url = prompt("Введите ссылку: ", "http://");
+                    document.execCommand(command, false, url);
+                } else if (command === 'insertImage') {
+                    let url = prompt("Введите адрес изображения: ", "http://");
+                    document.execCommand(command, false, url);
+                } else {
+                    document.execCommand(command, false, null);
+                }
+            }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    /* Размер текста по умолчанию */
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+}
+
+#return {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background-color: #999999;
+    cursor: pointer;
+    color: black;
+}
+
+.container_h5 {
+    display: flex;
+    /* сделать контейнер гибким */
+    justify-content: space-between;
+    /* разделить элементы по горизонтали */
+}
+
+h5:first-child {
+    align-self: flex-start;
+    /* выровнять первый элемент <h5> по левому краю */
+}
+
+h5:last-child {
+    align-self: flex-end;
+    /* выровнять второй элемент <h5> по правому краю */
+}
+
+.checkbox-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.editor-container {
+    margin-top: 20px;
+}
+
+.editor-toolbar {
+    border: 1px solid #ced4da;
+    border-bottom: none;
+    border-radius: 0.25rem 0.25rem 0 0;
+    padding: 5px;
+    background-color: #f8f9fa;
+}
+
+.editor-toolbar .btn {
+    margin-right: 5px;
+}
+
+#editor {
+    border: 1px solid #ced4da;
+    border-radius: 0 0 0.25rem 0.25rem;
+    padding: 10px;
+    min-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.button-container {
+    text-align: right;
+}
+
+#addButton {
+    margin-top: 10px;
+    background-color: #4BA285;
+    color: white;
+}

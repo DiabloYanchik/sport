@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    /* Размер текста по умолчанию */
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: auto;
+}
+
+.sidebar {
+    width: 300px;
+    /* ширина бокового меню */
+    position: fixed;
+    /* фиксированное положение */
+    top: 10px;
+    /* верхняя граница */
+    left: 10px;
+    /* левая граница */
+    height: 100vh;
+    /* высота бокового меню */
+    background-color: #ffffff;
+    /* цвет фона */
+    padding: 15px;
+    /* отступы */
+    border-right: 10px;
+    /* граница справа */
+}
+
+.content {
+    margin-left: 250px;
+    /* отступ слева для основного содержимого */
+    padding: 20px;
+    background-color: #ffffff;
+    height: 100vh;
+    overflow-y: auto;
+    width: calc(100% - 250px);
+}
+    
+.sidebar a {
+    color: white;
+    /* Цвет текста в меню */
+}
+    
+.sidebar a:hover {
+    color: #ccc;
+    /* Цвет текста при наведении */
+}
+    
+.panel {
+    background-color: #4BA285;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 15px;
+    /* Добавляем границу вокруг каждой панели */
+    margin-top: 10px;
+    /* Отступ сверху */
+}
+    
+.panel-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    
+    /* Размер заголовка панели */
+    
+} 
+     
+.content {
+    margin-left: 300px;
+    /* Оставляем место для бокового меню */
+    padding: 20px;
+    background-color: #ffffff;
+    height: 100vh;
+    overflow-y: auto;
+}
+.site-title {
+    font-size: 20px;
+    /* Размер названия сайта */
+    text-align: center;
+    color: white;
+    /* Цвет текста в заголовке */
+}
+    
+.info-links {
+    text-align: left;
+    /* Выравнивание ссылок влево */
+} 
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-avatar {
+    margin-right: 10px;
+}
+    
+.profile-avatar img {
+    width: 35px;
+    height: 35px;
+}
+    
+.profile-name {
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-bottom: 5px solid #4BA285;
+    margin: 10px 0;
+    max-width: 100px;
+}
+
+button {
+    background-color: #3fcc88;  
+    margin: 0 auto; 
+    display: block;
+    border: #4BA285;
+    color: white;
+    width: 200px;
+    border-radius: 3px;
+}

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    /* Размер текста по умолчанию */
+}
+
+hr {
+    border: none;
+    border-bottom: 5px solid #4BA285;
+    margin: 10px 0;
+    max-width: 100px;
+}
+
+.search-and-themes {
+    position: absolute;
+    bottom: 30px;
+    /* добавить некоторое пространство от нижнего края */
+    right: 200px;
+    /* добавить некоторое пространство от правого края */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    /* добавить фиксированную ширину контейнера */
+}
+
+.theme-dropdown .btn-secondary {
+    border: 1px solid #ccc;
+    /* Добавьте светло-серый бордер */
+    border-radius: 6px;
+    /* Добавьте слегка округленные углы */
+    background-color: #fff;
+    /* Установите белый фон */
+    padding: 6px 12px;
+    /* Добавьте отступы, чтобы он выглядел как поле поиска */
+    color: #333;
+    /* Установите темно-серый текст */
+}
+
+.theme-dropdown .btn-secondary:hover {
+    border-color: #ffffff;
+    /* Измените цвет бордера на темно-серый при наведении */
+    background-color: #f0f0f0;
+    /* Добавьте светло-серый фон при наведении */
+    color: #333;
+    /* Оставьте темно-серый текст при наведении */
+}
+
+
+#myTable {
+    width: 75%;
+    /* Установить ширину таблицы на 100% */
+    overflow-x:hidden;
+    /* Отключить горизонтальную прокрутку */
+    overflow-y:scroll;
+    /* Включить вертикальную прокрутку */
+    height: 750px;
+    /* высота таблицы */
+    display:block;
+    /* сделать таблицу блоковым элементом */
+    border-collapse: collapse;
+    /* Объединить границы ячеек */
+}
+
+#myTable th,
+#myTable td {
+    border: 1px solid #ffffff;
+    /* Добавить границу ячеек */
+    padding: 16px;
+    /* Добавить отступы ячеек */
+    text-align: center;
+    /* Выровнять текст по центру */
+}
+
+#myTable th {
+    background-color: #ffffff;
+    /* Установить цвет фона заголовков */
+    font-weight: bold;
+    /* Установить жирный шрифт для заголовков */
+    
+}
+
+#myTable thead {
+    position: sticky;
+    /* Сделать заголовок sticky */
+    top: 0;
+    background-color: #f0f0f0;
+}
+
+#myTable tbody {
+    height: 300px;
+    /* Установить высоту tbody */
+    overflow-y:auto;
+    /* Включить вертикальную прокрутку */
+}
+
+.content {
+    padding: 20px;
+    /* Добавить отступы для основного содержимого */
+}
+
+.row {
+    margin: 0;
+    /* Убрать отступы для строки */
+}
+
+.col-md-12 {
+    padding: 0;
+    /* Убрать отступы для столбца */
+}
