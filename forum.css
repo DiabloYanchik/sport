@@ -1,0 +1,30 @@
+.card {
+    border: 3px solid #d4dad5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 0.875rem;
+}
+
+.card-text {
+    font-size: 0.875rem;
+}
+
+.card-link {
+    font-size: 0.875rem;
+    color: #28a745;
+}
+
+#card-container {
+    display:inline-table;
+}
+.card-body{
+    background-color: #d4dad5;
+}
